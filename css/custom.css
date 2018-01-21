@@ -1,6 +1,6 @@
 
 FilesMatch{
-    display: none;
+    visibility: hidden;
 }
 
 #texbox{
