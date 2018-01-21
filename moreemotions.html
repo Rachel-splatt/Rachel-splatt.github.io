@@ -1,0 +1,654 @@
+<head>
+  <!-- Plotly.js -->
+ <link rel = "stylesheet"
+   type = "text/css"
+   href = "style.css" />
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@typopro/web-bebas-neue@3.7.5/package.json" rel="stylesheet">
+     <link href=" https://cdn.jsdelivr.net/npm/@typopro/web-bebas-neue@3.7.5/TypoPRO-BebasNeue.css" rel="stylesheet">
+</head>
+
+<body>
+    
+ <img class="center" src="datapicturesstuff/headings-06.png" width="1000px">
+        <div  style="display:table-row;"  id="divider">
+        
+    <div style="display:table-cell; width: 300px; height: 500px;" id="Anger"> <!-- Plotly chart will be drawn inside this DIV --></div>
+          
+    <div style="display:table-cell; width: 300px; height: 500px;"  id="Joy"> <!-- Plotly chart will be drawn inside this DIV --></div>
+            
+    <div style="display:table-cell; width: 300px; height: 500px;" id="Sadness"> <!-- Plotly chart will be drawn inside this DIV --></div>
+
+    <div style="display:table-cell; width: 300px; height: 500px;" id="Fear"> <!-- Plotly chart will be drawn inside this DIV --></div>
+           
+    <div style="display:table-cell; width: 300px; height: 500px;" id="Disgust"> <!-- Plotly chart will be drawn inside this DIV --></div>
+          </div>
+   
+    <img class="center" src="datapicturesstuff/Anger.png" width="1000px">
+    <img class="center" src="datapicturesstuff/Joy.png" width="800px">
+    <img class="center" src="datapicturesstuff/saddddd.png" width="800px">
+    <img class="center" src="datapicturesstuff/fear.png" width="800px">
+    <img class="center" src="datapicturesstuff/disgust.png" width="800px">
+ 
+    <img class="center" src="datapicturesstuff/headings-07.png" width="1000px">
+
+    <div style="display:table-row;"  id="divider1">
+    <div id="intj" style="display:table-cell; width: 450px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+     <div id="intp" style="display:table-cell; width: 450px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+    <div id="entj" style="display:table-cell; width: 450px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+        </div>
+    <div style="display:table-row;"  id="divider2">
+     <div id="entp" style="display:table-cell; width: 450px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV -->
+    </div>
+      <div id="infj" style="display:table-cell; width: 450px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+     <div id="infp" style="display:table-cell; width: 600px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+    </div>
+    <div style="display:table-row;"  id="divider3">
+      <div id="enfj" style="display:table-cell; width: 600px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+     <div id="enfp" style="display:table-cell; width: 600px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+      <div id="istj" style="display:table-cell; width: 600px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+    </div>
+    <div style="display:table-row;"  id="divider4">
+     <div id="isfj" style="display:table-cell; width: 600px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+      <div id="estj" style="display:table-cell; width: 600px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+     <div id="esfj" style="display:table-cell; width: 600px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+    </div>
+        <div style="display:table-cell; display:table-row;"  id="divider5">
+      <div id="istp" style="display:table-cell; width: 600px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+     <div id="isfp" style="display:table-cell; width: 600px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+     <div id="estp" style="display:table-cell; width: 600px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+        </div>
+     <div id="esfp" style="display:table-cell; width: 600px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+  <script>
+        
+      
+//BEGIN EMOTION RANKS 
+      
+var trace55 = {x: [0.1130501315, 0.115149253, 0.1198956222, 0.1210552217, 0.1228758025, 0.1229310675, 0.126429734, 0.133531946, 0.1369911828, 0.1370458668, 0.1379865366, 0.1489147208, 0.1489616585, 0.1516477098, 0.1532543613, 0.1939718947],
+  y: ['INFP', 'ISFP', 'ENFJ', 'ENFP', 'ESTP', 'INFJ', 'ISTJ', 'INTP', 'ENTP', 'INTJ', 'ESFJ', 'ISFJ', 'ESFP', 'ENTJ', 'ISTP', 'ESTJ'],
+  name: 'Anger',
+  type: 'bar',
+    orientation:'h',
+marker: {
+    color: 'rgb(255, 65, 54)'},
+               
+ 
+};
+
+      var layout = {
+       
+          title: 'Anger',
+          titlefont:{family: 'TypoPRO Bebas Neue', color: 'black', size: 30},
+  xaxis: {
+    title: 'Sentiment Value',
+    titlefont: {
+      family: 'TypoPRO Bebas Neue',
+      size: 13,
+      color: 'grey'
+    }
+  },
+          
+  yaxis: {
+    title: 'Personality Type',
+    titlefont: {
+      family: 'TypoPRO Bebas Neue',
+      size: 13,
+      color: 'grey'
+    }
+  }
+      };
+
+var data = [trace55];
+
+Plotly.newPlot('Anger', data, layout);    
+      
+      
+var trace55 = {x: [0.2264566098,0.2840676968,0.2888356316,0.2898913351,0.2943978175,0.2966443973,0.2968875926,0.2971661156,0.3065992796,0.3095062208,0.3345672113,0.3365876285,0.3374728293,0.3394309866,0.3581694072,0.3648128611],
+  y: ['ESFP','ISTP','ESTJ','ISTJ','INTP','ENTJ','ESTP','INTJ','ENTP','ISFJ','INFJ','ISFP','ESFJ','INFP','ENFP','ENFJ'],
+  name: 'Joy',
+  type: 'bar',
+    orientation:'h',
+    marker: {
+    color: 'rgb(255,255,102)'}
+};
+
+      
+      var layout = {
+          title: 'Joy',
+          titlefont:{family: 'TypoPRO Bebas Neue', color: 'black', size: 30},
+  xaxis: {
+    title: 'Sentiment Value',
+    titlefont: {
+      family: 'TypoPRO Bebas Neue',
+      size: 13,
+      color: 'grey'
+    }
+  },
+          
+  yaxis: {
+    title: 'Personality Type',
+    titlefont: {
+      family: 'TypoPRO Bebas Neue',
+      size: 13,
+      color: 'grey'
+    }
+  }
+      };
+
+var data = [trace55];
+
+Plotly.newPlot('Joy', data, layout);     
+
+      
+var trace55 = {x: [0.2268614484,0.253809235,0.262183083,0.2633190508,0.2649710213,0.265344,0.2657044025,0.2706910669,0.2765037098,0.2790026509,0.2859672368,0.2901312167,0.307382487,0.3108510732,0.3206628049,0.3214722469],
+  y: ['ISTP','ENTP','ISFP','INFJ','INTP','ISTJ','INTJ','INFP','ENTJ','ENFP','ESTJ','ENFJ','ISFJ','ESFJ','ESFP','ESTP'],
+  name: 'Sadness',
+  type: 'bar',
+orientation:'h',
+marker: {
+color: 'rgb(93, 164, 214)'}
+};
+
+            var layout = {
+          title: 'Sadness',
+          titlefont:{family: 'TypoPRO Bebas Neue', color: 'black', size: 30},
+  xaxis: {
+    title: 'Sentiment Value',
+    titlefont: {
+      family: 'TypoPRO Bebas Neue',
+      size: 13,
+      color: 'grey'
+    }
+  },
+          
+  yaxis: {
+    title: 'Personality Type',
+    titlefont: {
+      family: 'TypoPRO Bebas Neue',
+      size: 13,
+      color: 'grey'
+    }
+  }
+      };
+
+var data = [trace55];
+
+Plotly.newPlot('Sadness', data, layout);     
+
+      
+var trace55 = {x: [0.1088523833, 0.1095276758,0.1099513676,0.1130388097,0.1135597684,0.1146815487,0.1158002351,0.1159096543,0.1160354634,0.1163115532,0.1178270526,0.117917086,0.1186631728,0.1211194866,0.1241736688,0.1259919024],
+  y: ['ENFJ','INFP','ISFP','ISTP','INTP','ENFP','INTJ','INFJ','ESFJ','ISTJ','ESTJ','ENTP','ESTP','ENTJ','ISFJ','ESFP'],
+  name: 'Fear',
+  type: 'bar',
+    orientation:'h',
+    marker: {
+    color: 'rgb(138,97,176)',
+    color: 'rgb(138, 97, 176)'}
+};
+
+            var layout = {
+          title: 'Fear',
+          titlefont:{family: 'TypoPRO Bebas Neue', color: 'black', size: 30},
+  xaxis: {
+    title: 'Sentiment Value',
+    titlefont: {
+      family: 'TypoPRO Bebas Neue',
+      size: 13,
+      color: 'grey'
+    }
+  },
+          
+  yaxis: {
+    title: 'Personality Type',
+    titlefont: {
+      family: 'TypoPRO Bebas Neue',
+      size: 13,
+      color: 'grey'
+    }
+  }
+      };
+
+var data = [trace55];
+
+Plotly.newPlot('Fear', data, layout);     
+      
+      
+var trace55 = {x: [0.06181221951,0.0789012439,0.07982759622,0.08304130975,0.08345596443,0.0837889546,0.08682225556,0.08709733511,0.08735946229,0.08856252597,0.09452738272,0.09566707895,0.09709153548,0.09729921522,0.09860034869,0.1030163839],
+  y: ['ESFP','ESFJ','INFJ','ENFP','ISFP','INFP','ENFJ','ISTJ','INTJ','ISFJ','ESTP','ESTJ','ISTP','INTP','ENTP','ENTJ'],
+  name: 'Disgust',
+  type: 'bar',
+    orientation:'h',
+    marker: {
+    color: 'rgb(44, 160, 101)'}
+};
+
+            var layout = {
+          title: 'Disgust',
+          titlefont:{family: 'TypoPRO Bebas Neue', color: 'black', size: 30},
+  xaxis: {
+    title: 'Sentiment Value',
+    titlefont: {
+      family: 'TypoPRO Bebas Neue',
+      size: 13,
+      color: 'grey'
+    }
+  },
+          
+  yaxis: {
+    title: 'Personality Type',
+    titlefont: {
+      family: 'TypoPRO Bebas Neue',
+      size: 13,
+      color: 'grey'
+    }
+  }
+      };
+
+var data = [trace55];
+
+Plotly.newPlot('Disgust', data, layout);     
+
+
+
+      
+      
+//BEGIN INDIVIDUAL TYPE ANALYSIS
+      
+var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.137045866797, 0.297166115573, 0.265704402547, 0.115800235064, 0.0873594622919],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [13.7, 29.7, 26.5, 11.5, 8.7]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'INTJ',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('intj', data, layout);
+      
+      
+      
+var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.13353194599, 0.294397817512, 0.264971021277, 0.113559768412, 0.0972992152209],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [13.4, 29.4, 26.5, 11.4, 9.7]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'INTP',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('intp', data, layout);
+      
+      
+var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.151647709821, 0.296644397321, 0.276503709821, 0.121119486607, 0.103016383929],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [15.2, 29.7, 27.8, 12.1, 10.3]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'ENTJ',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('entj', data, layout);  
+      
+      
+      
+      //ENTP
+       
+      
+      var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.136991182796, 0.30659927957, 0.253809235023, 0.117917086022, 0.0986003486943],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [13.7, 30.7, 25.4, 11.8, 9.9]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'ENTP',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('entp', data, layout);  
+      
+      
+            //INFJ
+       
+      
+      var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.122931067538, 0.334567211329, 0.263319050835, 0.115909654321, 0.0798275962237],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [12.3, 33.5, 26.3, 11.6, 8.0]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'INFJ',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('infj', data, layout); 
+      
+      
+     //INFP
+       
+      
+      var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.113050131548, 0.339430986612, 0.270691066938, 0.109527675786, 0.0837889545984],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [11.3, 33.9, 27.1, 11.0, 8.4]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'INFP',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('infp', data, layout); 
+      
+      
+      //ENFJ
+       
+      
+      var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.119895622222, 0.364812861111, 0.290131216667, 0.108852383333, 0.0868222555556],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [12.0, 36.6, 29.0, 10.9, 8.7]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'ENFJ',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('enfj', data, layout); 
+      
+     
+      //enfp
+      
+ var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.121055221698, 0.358169407233, 0.279002650943, 0.114681548742, 0.0830413097484],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [12.1, 35.8, 27.9, 11.5, 8.3]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'ENFP',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('enfp', data, layout); 
+      
+    //istj  
+      
+      var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.126429734043, 0.289891335106, 0.265344, 0.116311553191, 0.0870973351064],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [12.6, 29.0, 26.5, 11.6, 8.7]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'ISTJ',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('istj', data, layout); 
+      
+          //isfj  
+      
+      var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.148914720779, 0.309506220779, 0.307382487013, 0.124173668831, 0.088562525974],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [14.9, 31.0, 30.7, 12.4, 8.9]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'ISFJ',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('isfj', data, layout); 
+      
+      
+                //estj  
+      
+      var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.193971894737, 0.288835631579, 0.285967236842, 0.117827052632, 0.0956670789474],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [19.4, 28.9, 28.6, 11.8, 9.6]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'ESTJ',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('estj', data, layout); 
+      
+      
+                    //esfj  
+      
+      var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.137986536585, 0.337472829268, 0.310851073171,  0.116035463415, 0.0789012439024],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [13.8, 33.7, 31.1, 11.6, 7.9]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'ESFJ',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('esfj', data, layout);   
+      
+      
+                          //istp  
+      
+      var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.15325436129, 0.284067696774, 0.226861448387,  0.113038809677, 0.0970915354839],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [15.3, 28.4, 22.7, 11.3, 9.7]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'ISTP',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('istp', data, layout);  
+      
+                                //isfp  
+      
+      var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.115149252964, 0.336587628458, 0.262183083004,  0.109951367589, 0.0834559644269],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [11.5, 33.7, 26.2, 11.0, 8.3]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'ISFP',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('isfp', data, layout);  
+      
+      
+                                      //estp  
+      
+      var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.122875802469, 0.296887592593, 0.321472246914,  0.11866317284, 0.094527382716],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [12.3, 29.6, 32.1, 11.9, 9.5]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'ESTP',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('estp', data, layout);  
+      
+                                            //esfp  
+      
+      var trace1 = {
+  x: ['anger', 'joy', 'sadness', 'fear', 'disgust'],
+  y: [0.148961658537, 0.226456609756, 0.320662804878,  0.125991902439, 0.0618122195122],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(255, 65, 54)', 'rgb(255,255,102)', 'rgb(93, 164, 214)', 'rgb(138, 97, 176)', 'rgb(44, 160, 101)'],
+    opacity: [.8, 0.8, 0.8, 0.8, 0.8],
+    size: [14.9, 22.6, 32.1, 12.6, 6.2]
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'ESFP',
+  showlegend: false,
+  height: 400,
+  width: 450,
+};
+
+Plotly.newPlot('esfp', data, layout);  
+      
+      
+  </script>
+</body>

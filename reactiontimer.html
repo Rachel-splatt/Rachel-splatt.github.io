@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Google fonts - Open Sans-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+      <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- owl carousel-->
@@ -34,7 +35,7 @@
           <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
             <div class="sidebar-content">
               <h1 class="sidebar-heading"> <a href="index.html">rachel platt</a></h1>
-              <p class="sidebar-p">I am a computer science student at CU Boulder with interests in art direction and user experience design. </p>
+              <p class="sidebar-p lead3">I am a computer science student at CU Boulder with interests in art direction and user experience design. </p>
              <!-- <p class="sidebar-p">Originally from Toronto, currently based in London. </p> -->
               <ul class="sidebar-menu"> 
                 <li class="active"><a href="index.html">projects</a></li>
@@ -47,7 +48,18 @@
                 <!-- Please do not remove the backlink to us, unless you support the development at https://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)        -->
                 
               </div>
-            <img id="sidebardesign" src="octocutiebw.png" class="img-responsive">
+            <div id='designcontainer'>
+           <div id="texbox">     
+            <div id="communication" class="typewriter"> <div class="wrap">
+    <div id="typed-strings">
+      <p class="commentate lead2">  Getting this project to finally work, ^500 after staring at my computer screen for almost 10 hours, ^500 is probably one of the highlights of my college career.</p>
+    </div>
+    <span id="typed" style="white-space:pre-line;"></span>
+    </div>
+            </div>
+            </div>       
+            <img id="sidebardesign" src="img/bitmojeez/reactiontimerbm-06.png" class="img-responsive">
+        </div> 
             </div>
           </div>
           <!--   *** SIDEBAR END ***  -->
@@ -58,10 +70,10 @@
               <h1 class="small-navbar-heading"> <a href="index.html">rachel platt </a></h1>
             </div>
             <div class="row">
-              <div class="col-lg-10">
+              <div class="col-lg-12">
                 <div class="content-column-content">
                   <h1 class="abouth1">reaction timer</h1>
-                  <p class="lead">One of my favorite technical projects-- this reaction timer game was made as a course project for ECEN 2350, Digital Logic. This was the first time I’d ever worked with hardware, and enjoyed seeing my code come to life on my MAX DE-10 Lite FPGA board. The reaction timer was coded in Verilog HDL as a finite state machine. For more information, <a class="codelink" href="https://drive.google.com/file/d/1wpeRTNLdvhskgqWS3RcB1i3wc8030DjT/view?usp=sharing" target="_blank">see my report. </a></p>
+                  <p class="lead2">One of my favorite technical projects-- this reaction timer game was made as a course project for ECEN 2350, Digital Logic. This was the first time I’d ever worked with hardware, and enjoyed seeing my code come to life on my MAX DE-10 Lite FPGA board. The reaction timer was coded in Verilog HDL as a finite state machine. For more information, <a class="codelink" href="https://drive.google.com/file/d/1wpeRTNLdvhskgqWS3RcB1i3wc8030DjT/view?usp=sharing" target="_blank">see my report. </a></p>
                   
                   </div></div>
                     
@@ -74,14 +86,14 @@
                               <div class="col-lg-6">
                 <div class="content-column-content">
                      <h2 class="abouth1">tools</h2>
-                    <p><ul class="tools"><li>Quartus Prime</li>
+                    <ul class="tools lead2"><li>Quartus Prime</li>
                         <li>MAX DE-10 Lite FPGA</li>
                         <li>Verilog HDL</li>
                 </ul>
-                    </p>
+                    
                     
                   <h2 class="abouth1">key modules</h2>
-                    <p><ul class="tools"><li><b> clock divider - </b>Adjusts the FPGA’s onboard clock to create a standard 1kHZ clock
+                    <ul class="tools lead2"><li><b> clock divider - </b>Adjusts the FPGA’s onboard clock to create a standard 1kHZ clock
 </li>
                         <li><b> lfsr & random counter - </b>Generates and counts to a random time interval to wait before the LED lights up, to prevent habituation.
 
@@ -96,7 +108,7 @@
 
 </li>
                   </ul>
-                </p>
+                
                  
                                   
                                   
@@ -154,6 +166,8 @@
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/front.js"></script>
+          <script src="js/typed.min.js"></script>
+          <script src="js/typing.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
     <!---->
     <script>
