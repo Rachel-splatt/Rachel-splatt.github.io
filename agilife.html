@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+      
+<FilesMatch "\.(jpg|png|cs|jpeg)$">
+Header set Cache-Control "max-age=604800"
+</FilesMatch>
+<FilesMatch "\.(js)$">
+Header set Cache-Control "max-age=31536000"
+</FilesMatch>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>agilife</title>
