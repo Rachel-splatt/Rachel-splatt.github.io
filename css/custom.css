@@ -1,3 +1,5 @@
+.prev{color: #c72669; text-decoration: none;}
+.next{color: #c72669; text-decoration: none; float: right;}
 FilesMatch{visibility: hidden;}
 #texbox{border:5px dotted #c72669;height:145px;width:95%;}
 #communication{height:120px;font-family:'Reenie Beanie', cursive;font-size:19px;padding:10px;overflow:auto;}
