@@ -89,7 +89,7 @@ ul{
 }
 
 
-body{background-image:url(Webbackground.png);background-size:cover;background-color:#d8dace; background-attachment: fixed}
+body{background-image:url(Webbackground.png);background-size:cover;background-color:white; background-attachment: fixed}
 li{}
 .sidebar-menu{}
 #sidebardesign{width:70%;}
