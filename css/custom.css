@@ -1,30 +1,114 @@
 .prev{color: #c72669; text-decoration: none;}
-.next{color: #c72669; text-decoration: none; float: right;}
+.next{color: #c72669; text-decoration: none; right: 40px;}
 FilesMatch{visibility: hidden;}
-#texbox{border:5px dotted #c72669;height:145px;width:95%;}
-#communication{height:120px;font-family:'Reenie Beanie', cursive;font-size:19px;padding:10px;overflow:auto;}
-.commentate{margin-left:20%;}
-#designcontainer{width:22%;position:fixed;padding-left:0;bottom:0;}
+
+a.plink{
+    font-family: Montserrat;
+     text-transform : uppercase;
+}
+
+.sidebar-content{
+    width: inherit;
+    position: fixed;
+    padding-right: 60px;
+}
+
+.box-masonry{
+    border-radius: 35px !important;
+}
+
+.radius{
+    border-radius: 30px;
+}
+
+
 .box-masonry-hover-text-header{text-decoration:none;}
-.sidebar-heading{text-transform:none;letter-spacing:normal;font-size:40px;}
-body{line-height:1;text-transform:none;letter-spacing:normal;background-image:url(bg.png);background-repeat:repeat;background-size:contain;font-family:helvetica;background-color:#d8dace;}
-li{text-transform:none;}
+.sidebar-heading{  font-family : Montserrat;
+  font-size : 35px;
+  letter-spacing : 3.96px;
+  text-transform : uppercase;
+  color : #333333;
+  color : rgb(51, 51, 51);
+  text-align: left !important}
+.h1,h1{  font-family : Montserrat;
+  font-size : 35px;
+  letter-spacing : 3.96px;
+  text-transform : uppercase;
+  color : #333333;
+  color : rgb(51, 51, 51);
+text-align: center;}
+h2,.h2{
+    margin-bottom: 30px;
+    font-family : Montserrat;
+  font-size : 30px;
+  letter-spacing : 3.96px;
+  text-transform : uppercase;
+  color : #333333;
+  color : rgb(51, 51, 51);
+    text-align: center;
+}
+h3,.h3{
+    margin-bottom: 20px;
+    font-family : Montserrat;
+  font-size : 25px;
+  letter-spacing : 3.96px;
+  text-transform : uppercase;
+  color : #333333;
+  color : rgb(51, 51, 51);
+    text-align: center;
+}
+.listhead{
+    text-align: left;
+}
+
+#texbox{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+
+}
+
+.line{
+  position: absolute;
+}
+
+
+
+ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.center{
+        text-align: center;
+}
+
+.projectrow{
+    z-index: 1;
+    border-radius: 35px;background:#fff;margin-bottom:30px; position:relative; box-shadow : 0px 0px 8px rgba(0, 0, 0, 0.4);filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=0, Color='#000000') ; margin-right: 30px; padding-top: 40px; padding-bottom: 20px;
+}
+
+
+body{background-image:url(Webbackground.png);background-size:cover;background-color:#d8dace; background-attachment: fixed}
+li{}
 .sidebar-menu{}
 #sidebardesign{width:70%;}
 #sidebar{}
-.vibes{color:black;background-image:url(bg1.png);background-repeat:repeat;background-size:contain;background-color:rgb(212,206,174);}
+
 p{color:black;}
 .abouth1{border-bottom:10px solid #c72669;}
 .abouth4{}
 #strengths{width:70%;}
-#me{width:40%;}
+#me{width:20%;}
 .mainview{}
-.pcs{display:block;height:400px !important;margin:0 auto 30px;}
+.pcs{display:block;height:500px !important;margin:0 auto 30px;}
 .pcs1{display:block;margin:0 auto 30px;}
 .pcp{max-height:100%;max-width:100%;}
 .emmy{width:60%;}
 #bblogo{margin-top:17%;width:60%;margin-bottom:10%;}
-#rtvideo{}
+#rtvideo{display: block;
+    margin-left: auto;
+    margin-right: auto;}
 .tools{padding-left:30px;margin-bottom:10px;}
 li{margin:inherit;}
 .owl-item{height:50%;}
@@ -35,11 +119,11 @@ li{margin:inherit;}
 .codelink:hover{color:#c72669;text-decoration:none;}
 .codelink:visited{text-decoration:none;}
 .codelink:active{text-decoration:none;}
-@media screen and (max-width:1000px){.email{word-break:break-all;}
+@media screen and (max-width:1000px){.email{word-break:break-all; } .projectrow{margin-left: 30px;}
 }
 .lead2{margin-bottom:10px;font-size:14px;font-weight:300;line-height:1.4}
 @media (min-width:768px){.lead2{font-size:19px}}
 .lead3{margin-bottom:10px;font-size:14px;font-weight:300;line-height:1.4}
 @media (min-width:768px){.lead2{font-size:16px}}
-#architecture{width:80%;}
+#architecture{width:50%;}
 #board{width:80%;}
