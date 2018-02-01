@@ -439,6 +439,7 @@ a:active{text-decoration:none;opacity:1;color:#fff;}
 .dropdown-menu > .active > a:focus{color:#ffffff;background-color:#c72669;}
 .modal-content{background-color:#ffffff;border:1px solid #999999;border:1px solid rgba(0, 0, 0, 0.2);border-radius:0;}
 body{  font-family : Open Sans;
+    font-style: light;
   font-size : 14px;
   letter-spacing : 1.2px;
   color : #333333;

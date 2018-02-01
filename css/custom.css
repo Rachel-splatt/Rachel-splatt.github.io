@@ -21,6 +21,18 @@ a.plink{
     border-radius: 30px;
 }
 
+body{
+    font-style: light;
+}
+
+.btn{
+ font-family : Montserrat;
+  font-size : 14px;
+  letter-spacing : 3.96px;
+  text-transform : uppercase;
+
+  
+}
 
 .box-masonry-hover-text-header{text-decoration:none;}
 .sidebar-heading{  font-family : Montserrat;
@@ -76,8 +88,9 @@ h3,.h3{
 
 ul{
     padding-left: 0;
-    list-style-type: none;
 }
+
+
 
 .center{
         text-align: center;
@@ -90,7 +103,7 @@ ul{
 
 
 body{background-image:url(Webbackground.png);background-size:cover;background-color:white; background-attachment: fixed}
-li{}
+
 .sidebar-menu{}
 #sidebardesign{width:70%;}
 #sidebar{}
@@ -99,7 +112,7 @@ p{color:black;}
 .abouth1{border-bottom:10px solid #c72669;}
 .abouth4{}
 #strengths{width:70%;}
-#me{width:20%;}
+
 .mainview{}
 .pcs{display:block;height:500px !important;margin:0 auto 30px;}
 .pcs1{display:block;margin:0 auto 30px;}
@@ -119,10 +132,12 @@ li{margin:inherit;}
 .codelink:hover{color:#c72669;text-decoration:none;}
 .codelink:visited{text-decoration:none;}
 .codelink:active{text-decoration:none;}
-@media screen and (max-width:1000px){.email{word-break:break-all; } .projectrow{margin-left: 30px;}
+@media screen and (max-width:1000px){.email{word-break:break-all; } .projectrow{margin-left: 30px;} .h1,h1,h2,h3,.h2,.h3{font-size: 18px;} .mobileimg{width: 100%;} .row{margin-left: 0; margin-right: 0;} .sidebar-heading{font-size: 24px;} .sidebar-menu{font-size: 12px;} .content-column-content{margin: 0;}
 }
 .lead2{margin-bottom:10px;font-size:14px;font-weight:300;line-height:1.4}
 @media (min-width:768px){.lead2{font-size:19px}}
+@media (min-width:900px){#me{width:20%;} }
+@media (max-width:900px){#me{width:70%;} }
 .lead3{margin-bottom:10px;font-size:14px;font-weight:300;line-height:1.4}
 @media (min-width:768px){.lead2{font-size:16px}}
 #architecture{width:50%;}
