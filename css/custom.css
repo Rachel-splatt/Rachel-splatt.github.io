@@ -96,6 +96,12 @@ ul{
         text-align: center;
 }
 
+
+
+.special{
+    text-align: left;
+}
+
 .projectrow{
     z-index: 1;
     border-radius: 35px;background:#fff;margin-bottom:30px; position:relative; box-shadow : 0px 0px 8px rgba(0, 0, 0, 0.4);filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=0, Color='#000000') ; margin-right: 30px; padding-top: 40px; padding-bottom: 20px;
