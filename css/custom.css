@@ -35,6 +35,13 @@ body{
   
 }
 
+.box-masonry .box-masonry-hover-text-header p {
+    font-size: 11px;
+}
+
+.box-masonry-hover-text-header>h4{
+    font-size: 14px;
+}
 
 .shadoe{
      box-shadow : 0px 0px 20px rgba(0, 0, 0, 0.7); 
