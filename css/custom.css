@@ -35,6 +35,11 @@ body{
   
 }
 
+iframe{
+    display: block;
+    margin: 0 auto;
+}
+
 .box-masonry .box-masonry-hover-text-header p {
     font-size: 11px;
 }
