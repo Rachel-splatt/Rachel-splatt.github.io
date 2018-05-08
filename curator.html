@@ -1,72 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
-<FilesMatch "\.(jpg|png|cs|jpeg)$">
-Header set Cache-Control "max-age=604800"
-</FilesMatch>
-<FilesMatch "\.(js)$">
-Header set Cache-Control "max-age=31536000"
-</FilesMatch>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>curator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <!-- Bootstrap-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
- 
-    <!-- owl carousel-->
-    <link rel="stylesheet" href="css/owl.carousel.css">
+    <meta name="author" content="">
+
+    <title>Rachel Platt</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+          <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.css">
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-      <!--<link rel="stylesheet" href="css/owlalt.css">-->
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="favicon.png">
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+
   </head>
+
   <body>
-    <div id="all">
-      <div class="container-fluid">
-        <div class="row row-offcanvas row-offcanvas-left"> 
-          <!--   *** SIDEBAR ***-->
-<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas"><div class="sidebar-content"><h1 class="sidebar-heading"> <a href="index.html">rachel <br> platt</a></h1><br><p class="sidebar-p lead3">I am a computer science student at CU Boulder with interests in art direction and user experience design. </p><br><ul class="sidebar-menu"><li class="active"><a href="index.html">projects &#8594</a></li><li><a href="about.html">about</a></li></ul></div></div>
-          <!--   *** SIDEBAR END ***  -->
-          <!--   *** DETAIL ***-->
-          <div class="col-xs-12 col-sm-8 col-md-9 mainview content-column vibes">
-            <div class="small-navbar visible-xs">
-              <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
-              <h1> <a href="index.html">rachel platt </a></h1>
-            </div>
-            <div class="row projectrow">
-              <div class="col-lg-12">
-                <div class="content-column-content">
-                    
-                    <div id="topwrapper">
-                 
-                                   <a class="lead2 prev line" href="personalcreative.html"> &#8592</a>   <a class="lead2 next line" href="emmy.html">&#8594</a> <h1>curator</h1></div><br><br>
-                        
-                    
-                    
-                  <p class="lead2"> This project was done for CSCI 3002, Human Centered Computing Design & Development. My team and I created this interface for an application designed for collectors and hobbyists to store and manage their collections. My main role was visual design and user testing. Shown is our finished project. To see our design process, scroll down. </p>
-                    
-         
-                  </div>
-                  </div>
-              </div>
-                
-                    
-<div class="row projectrow">
-                <div class="col-lg-12">
-                    <div class="content-column-content">
-                  <div id="main-slider" style="margin-bottom:0;">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        
+      <div class="container">
+          <a class="navbar-brand" href="index.html">RP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="code.html">Code</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <section class="BeautibookSection">
+      <div class="container">
+        <div class="row align-items-center">
+                      <div class="col-lg-2 order-lg-2">
+
+          </div>
+          <div class="col-lg-8 order-lg-2">
+              <h2 class="display-4 text-center mainheading">Curator</h2>
+              <br>
+              <p class="text-center">This project was done for CSCI 3002, Human Centered Computing Design & Development. My team and I created this interface for an application designed for collectors and hobbyists to store and manage their collections. My main role was visual design and user testing.</p>
+                <br>
+              <p class="subtext text-center">Human Centered Computing Design & Development/ June 2017</p>
+          </div>
+        <div class="col-lg-2 order-lg-2">
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+      
+    <section class="BeautibookSection">
+      <div class="container">
+        <div class="row align-items-center">
+           <div class="col-lg-4 order-lg-2">
+       <img class="img-fluid" src="img/curator/itemdeets.jpeg">
+          </div>
+          <div class="col-lg-4 order-lg-2">
+       <img class="img-fluid" src="img/curator/Homescreen.jpeg">
+          </div>
+ 
+            <div class="col-lg-4 order-lg-2">
+       <img class="img-fluid" src="img/curator/newcollection.jpeg">
+          </div>
+   
+
+        </div>
+      </div>
+    </section>
+      
+      
+    <section class="BeautibookSection">
+      <div class="container">
+        <div class="row align-items-center">
+                      <div class="col-lg-2 order-lg-2">
+
+          </div>
+          <div class="col-lg-8 order-lg-2">
+              <h2 class="display-4 text-center">Problem</h2>
+              <br>
+              <p>When ideating our project, my team was inspired by the community of collectors of all types, and wanted to provide them with a way to manage their different collections. Initially, we were inspired by websites such as GoodReads, and VGCollect, apps that help readers and gamers store their collections, respectively. We also looked into more broad collection management sites, like Pinterest. We found two areas in these existing collection sites we thought could use improvement:</p>
+<ul>
+<li>The Services were unable to cater to a diverse audience of collectors- Existing collection management services typically cater to specific types of collections (gamers, readers, coin collectors), we felt we could create a broader audience</li>
+<li>The Services were not robust enough to attract collectors away from current methods- We thought about collectors who are particular in how they organize their collections. How could we make our service a viable alternative to these existing preferences?</li></ul>
+          </div>
+        <div class="col-lg-2 order-lg-2">
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+      
+
+      
+      
+            <section class="BeautibookSection">
+      <div class="container">
+        <div class="row align-items-center">
+                      <div class="col-lg-2 order-lg-2">
+
+          </div>
+          <div class="col-lg-8 order-lg-2">
+              <h2 class="display-4 text-center">Process</h2>
+              <br>
+              <ol><li><b>Initial Design:</b>My team of 5 designed collaboratively on chalkboards and on paper based on our research. I then took the our drawings into illustrator and Invision for user testing</li>
+              <li><b>User Testing:</b>We performed a cognitive walkthrough and think aloud protocol on three different tasks within our app: Creating a new collection, Adding an item to a collection, and Editing the collection template. We noticed that the creation of a new collection with different attributes was challenging for the users, and they expressed some general confusion about our application.</li>
+                <li><b>Reworking aspects of the design:</b>What we found during user testing was a good amount of confusion due to the scope and customizability of our application. We went back to the drawing board for some better designs.</li>
+              </ol>
+          </div>
+            
+        <div class="col-lg-2 order-lg-2">
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+      
+          <section class="BeautibookSection">
+      <div class="container">
+        <div class="row align-items-center">
+           <div class="col-lg-4 order-lg-2">
+       <img class="img-fluid" src="img/curator/blackboard.jpg" >
+          </div>
+          <div class="col-lg-4 order-lg-2">
+              <p class="subtext">Collection Creation Before:</p>
+       <img class="img-fluid" src="img/curator/before.png">
+          </div>
+ 
+            <div class="col-lg-4 order-lg-2">
+                <p class="subtext">Collection Creation After:</p>
+       <img class="img-fluid" src="img/curator/newcollection.jpeg">
+          </div>
+   
+
+        </div>
+      </div>
+    </section>
+      <br><br><br>
+      
+<section class="BeautibookSection">
+      <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-2 order-lg-2">
+
+          </div>
+          <div class="col-lg-8 order-lg-2">
+              <h2 class="display-4 text-center">Design</h2>
+                                    <div id="main-slider" style="margin-bottom:0;">
                     <div class="item"><img alt="curator ui intro" src="img/curator/firstscreen.jpeg" class="img-responsive pcp"></div>
                     <div class="item"><img alt="curator ui signup" src="img/curator/signup.jpeg" class="img-responsive pcp"></div>
                     <div class="item"><img alt="curator ui homescreen" src="img/curator/Homescreen.jpeg" class="img-responsive pcp"></div>
@@ -75,157 +182,50 @@ Header set Cache-Control "max-age=31536000"
                     <div class="item"><img alt="curator ui new collection" src="img/curator/newcollection.jpeg" class="img-responsive pcp"></div>
                     <div class="item"><img alt="curator ui settings" src="img/curator/settingsyo.jpeg" class="img-responsive pcp"></div>
                         </div>
+          </div>
+        <div class="col-lg-2 order-lg-2">
 
-                      
-                      
-                  </div>
-                  <!-- /#main-slider-->
-                 
-                </div>
-              </div>
-                
-              
-              <div class="row projectrow">
-                
-                                              <div class="col-lg-3">
-                <div class="content-column-content">
-                  <h2 class="center">tools</h2>
-                    <ul class="lead2 center"><li>Adobe Photoshop</li>
-                        <li>Adobe Illustrator</li>
-                        <li>Think Aloud Protocol</li>
-                        <li>Cognitive Walkthrough </li></ul>
-                   
-                 
-                  </div>
-                  </div>
-                
-                              <div class="col-lg-9">
-                <div class="content-column-content">
-                  <h2>lessons learned</h2>
-                    <p><ul class="lead2"><li><b> details matter - </b>we learned in testing our initial prototype that the details of language used, placement of buttons, and overall structure we key for an optimal usability experience.</li>
-                        <li><b> listen to user intuition - </b>In our cognitive walkthroughs, we found that our users’ intuition led them to attempt to use our application in a way other than we intended. Our initial reaction was to guide the user to how we wanted them to accomplish tasks, but we ultimately learned it was best to design based on the users’ intuition to increase discoverability and usability.
-</li>
-                    <li> <b>thinking beyond visual design - </b>User experience encompasses more than the look and feel of an application. This project challenged us to think about other aspects of designing an application for a user, such as data privacy, ethics, and possible legality issues.
-</li>
-                  </ul>
-                </p>
-                    <br/> <br/> <br/>
-                  </div>
-                  </div>
-                
-                
-              </div>
-          
-          
-        <div class="row projectrow">
-          
-          <div class="content-column-content">
-              <div class="col-lg-12">
-              
-              <h2> problem & ideation: </h2>
-                  
-            <p class="lead2">When ideating our project, my team was inspired by the community of collectors of all types, and wanted to provide them with a way to manage their different collections. Initially, we were inspired by websites such as GoodReads, and VGCollect, apps that help readers and gamers store their collections, respectively. We also looked into more broad collection management sites, like Pinterest. We found two areas in these existing collection sites we thought could use improvement: </p>
-                  
-            <ul class="tools lead2"><li><b>The Services were unable to cater to a diverse audience of collectors-</b> 
-Existing collection management services typically cater to specific types of collections (gamers, readers, coin collectors), we felt we could create a broader audience</li> <li><b>The Services were not robust enough to attract collectors away from current methods-</b>
-We thought about collectors who are particular in how they organize their collections. How could we make our service a viable alternative to these existing preferences?
-</li></ul>
-                  <br>
-                  <h2> features: </h2>
-                  <p class="lead2">Based on the problems we identified, we focused in on some key features</p>
-                  <ul class="tools lead2">
-                  <li><b>Collection types are user created-</b>We recognized that a separate collection app for each different type of collector would be unrealistic, so we decided in our app collections and their features would be user created.</li>
-                <li> <b>Users decide what attributes their collection items have, allowing for customizable sorting and visualization.</b></li>
-                      <li><b>Linked collections-</b>we felt that having different collections managed on one website gave us the unique opportunity for users to link items from different collections, or create sub collections, adding to the organization collectors desire.</li>
-                  </ul>
-                  <br>
-                  <br>
-              
-            </div>
           </div>
-          </div>
-          
-          
-                  <div class="row projectrow">
-          
-          <div class="content-column-content">
-              <div class="col-lg-12">
-              
-              <h2> initial design: </h2>
-                  
-            <p class="lead2 center">We began with initial prototypes and information architechture on paper, which we later translated to illustrator for our deliverables. </p>
-            <img alt="information architecture" id="architecture" class="textcenter img-responsive" src="img/curator/architecture.jpg" >
-                  
-              
-            </div>
-                      </div></div>
-            
-                                <div class="row projectrow">
-          
-          <div class="content-column-content">
-            <div class="col-lg-12">
-              
-                  
-                <h2> user testing: cognitive walkthrough</h2>
-            <p class="lead2">We performed a cognitive walkthrough on three different tasks within our app: Creating a new collection, Adding an item to a collection, and Editing the collection template. We noticed that the creation of a new collection with different attributes was challenging for the users, and they expressed some general confusion about our application. </p>
-                
-                <h2> user testing: think-aloud protocol</h2>
-                
-            <p class="lead2"> <b>Here are some key notes from our think-aloud protocol: </b></p>
-            <ul class="lead2"><li>User was confused about the different between creating a “collection template” and adding a new item. Said the term “label” was confusing terminology.</li>
-<li>User pressed save after adding one attribute, returning to the home screen. She was surprised by this outcome but realized she was not done and returned to the template creator.</li>
-<li>The user was unsure of how to create an attribute “Steps” and what kind of attribute this would be. 
-Overall, there was definite confusion about our app and how it could be used, in particular the creation of a new collection.</li></ul>
-                  
-              
-            </div>
-          </div>
-          </div>
-          
-          
-          
-          
-                  <div class="row projectrow">
-          
-          <div class="content-column-content">
-              <div class="col-lg-12">
-              
-              <h2> Designing based on feedback </h2>
-                  
-            <p class="lead2">After user-testing our application, we recognized there was a lot of confusion about our app, so we went back to the drawing board (literally). One of the most confusing things about our app for the user was the concept of creating a collection, and this was a huge part of our redesign.</p>
-              
-            </div>
-        
-          
-          
-  
-          
 
-              <div class="col-lg-6">
-              
-<img alt="blackboard prototype" class="img-responsive center" id="board" style="margin-top:20px" src="img/curator/blackboard.jpg">
-                  
-                <ul class="lead2"><br><li>collection creation redesign (as pictured)</li><li>keeping consistent terminology throughout the application</li><li>added welcome screen and first collection setup to better frame the use of our application</li></ul>
-              
-            </div>
-              
-                            <div class="col-lg-6">
-              <h3>before</h3>
-<img alt="first ui" class="img-responsive center" id="board" src="img/curator/before.png">
-             <h3>after</h3>
-            <img alt="improved ui" class="img-responsive center" id="board" src="img/curator/newcollection.jpeg">
-              
-            </div>
-              
-     
-
-          
-          
         </div>
       </div>
-  
-    <!-- Javascript files-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    </section>
+      
+      
+      
+     <section class="BeautibookSection">
+      <div class="container">
+        <div class="row align-items-center">
+                      <div class="col-lg-2 order-lg-2">
+
+          </div>
+          <div class="col-lg-8 order-lg-2">
+              <h2 class="display-4 text-center">Takeaways</h2>
+              <br>
+              <p>Working with a team on this project was a valuable experience. I found that after each user test and design iteration we all brought different insights to the table and were able to improve our design feeding off of each others’ ideas. In another way, it was challenging to take our mockups and be the sole person responsible for turning them into visual design. This could most definitely use a UI refresh, and I should have looked into more UI trends to give this a less dated feel to it. </p>
+          </div>
+        <div class="col-lg-2 order-lg-2">
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+      
+
+
+
+    <!-- Footer -->
+      <footer class="py-5 ">
+      <div class="container">
+        <p class="m-0 text-center small subtext">Copyright &copy; Rachel Platt 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+      
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"> </script>
     <script src="js/jquery.cookie.js"> </script>
     <script src="js/ekko-lightbox.js"></script>
@@ -234,16 +234,10 @@ Overall, there was definite confusion about our app and how it could be used, in
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/front.js"></script>
-                <script src="js/typed.min.js"></script>
-          <script src="js/typing.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+       <script src="js/owl.carousel.min.js"></script>
 
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-112764316-1');ga('send','pageview');
-    </script>
   </body>
+
 </html>
