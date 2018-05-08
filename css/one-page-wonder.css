@@ -20,8 +20,18 @@ right: 0;
     
 }
 */
+.padimg{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
+.shorten{
+    max-height: 600px;
+}
 
+#tripbiz{
+    transform: scale(0.65) translate(0,-28%);
+}
 
 .previmg{
     padding-bottom: 50px;
