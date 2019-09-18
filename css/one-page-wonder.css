@@ -1,6 +1,6 @@
 body {
-  font-family: 'Lato';
-    font-weight: 300;
+  font-family: 'Hind', sans-serif;
+    color: #636363;
     
 }
 
@@ -23,6 +23,10 @@ right: 0;
 .padimg{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.pinksection{
+    background: #f5f5f5;
 }
 
 .shorten{
@@ -70,7 +74,7 @@ a:hover{
 }
 
 @font-face {
-font-family: "santelia";
+font-family: 'Palanquin Dark', sans-serif;
 src: url("SantEliaRoughLine.otf");
 }
 
@@ -113,13 +117,20 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'santelia';
+    font-family: 'Palanquin Dark', sans-serif;
     font-size: 30px !important;
+    color: #464646;
+
 }
 
-.specialtitle{
-    font-size: 50px !important;
-  
+p{
+    color: #636363;
+}
+
+
+
+hr{
+    margin: 0;
 }
 
 .BeautibookSection{
@@ -127,9 +138,11 @@ h6 {
 }
 
 .subtext{
-    font-family: 'Didot';
-    font-style: italic;
-    font-size: 11px !important;
+    font-family: Hind-Medium;
+font-size: 12px;
+color: #246B55;
+letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .btn-xl {
@@ -155,10 +168,11 @@ h6 {
 }
 
 .navbar-custom .navbar-brand {
-  font-family: 'santelia';
+  font-family: 'Palanquin Dark', sans-serif;
 
   font-size: 1.6rem;
     text-align: center;
+    color: #246B55;
 
 }
 
